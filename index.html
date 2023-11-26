@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>나의 포트폴리오</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="css/custom-style.css" rel="stylesheet" />
+        <script type="text/javascript" src="src/functions.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="cover.jpg" />
+
+            <h1 id="mainTitle">간단한 소개</h1>
+            <p>안녕하세요, 저는 <strong>홍길동</strong>입니다.</p>
+            
+            <p>저는 <strong>웹 개발자</strong>입니다.</p>
+            
+            <a href="about.html">About 페이지</a>
+            <a href="discussion.html">디스커션 페이지</a>
+
+            Visitor Counts: <span id="visitorCounts">0</span>
+
+            <h3>댓글</h3>
+
+            <div id="commentsBox">
+            </div>
+            
+            <button type="button" class="btn btn-primary" onclick="document.getElementById('mainTitle').innerHTML=changeTitle('새로운 포트폴리오')">여기 눌러서 타이틀 바꾸기</button>
+            
+            <button type="button" class="btn btn-danger" onclick="document.getElementById('visitorCounts').innerHTML=incrementVisitor()">여기 눌러서 카운트 더하기</button>
+
+            <button type="button" class="btn btn-success" onclick="addComment()">여기 눌러서 댓글 더하기</button>
+        </div>
+    </body>
+</html>
+

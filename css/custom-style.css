@@ -1,0 +1,13 @@
+h1 {
+    color: #6495ED;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.button-custom {
+    background-color: green;
+    color: #fff;
+}
